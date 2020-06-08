@@ -7,20 +7,20 @@ Run cmd.exe with admin privileges.
 
 The mklink command takes arguments as:
 
-'''mklink Link Target'''
+_```mklink Link Target```_
 
 The first path after the command is called the “Link.” 
 The second path belongs to the physical file on your disk and is called “Target.”
 
 Eg: to create a symlink in the **C:** drive for a text file located on the **E:** drive, the command looks like this.
 
-'''mklink "C:\\Path\\Symlink_File.txt" "E:\\Real_File.txt"'''
+```mklink "C:\\Path\\Symlink_File.txt" "E:\\Real_File.txt"```
 
 symlinks can be made for directories too.
 
 To do that add the switch **/D** as a parameter in the command. (make sure the folder does not already exist in the “target” drive)
 
-'''mklink /D "C:\\Path\\Symlink_Folder" "E:\\Real_Books"'''
+```mklink /D "C:\\Path\\Symlink_Folder" "E:\\Real_Books"```
 
 Delete a symlink by selecting the link like you would a normal file or directory and hit delete. (only the link will be removed)
 
