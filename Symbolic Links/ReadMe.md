@@ -14,13 +14,13 @@ The second path is the physical file on disk and is called “Target.”
 
 Eg: to create a symlink in the _```C:```_ drive for a text file located on the _```E:```_ drive, the command looks like this.
 
-`mklink "C:\\Path\\Symlink_File.txt" "E:\\Real_File.txt"`
+`mklink "C:\Path\Symlink_File.txt" "E:\Path\Real_File.txt"` or `mklink "C:\Path\Symlink_File_1.txt" "E:\Path\Sub Path\Another Level\Real_File_1.txt"`
 
 **symlinks can be made for directories too.**
 
 To do that add the switch _`/D`_ as a parameter in the command. (make sure the folder does not already exist in the “target” drive)
 
-`mklink /D "C:\\Path\\Symlink_Folder" "E:\\Real_Books"`
+`mklink /D "C:\Path\Symlink_Folder" "E:\Real_Books"`
 
 Delete a symlink by selecting the link like you would a normal file or directory and hit delete. (only the link will be removed)
 
